@@ -1,0 +1,2 @@
+To compile this program navigate to the HW3 directory in your terminal. Then type the command Javac *.java. 
+To run the StudentDatabaseConversionTester file type junit StudentDatabaseConversionTester into the command line. 

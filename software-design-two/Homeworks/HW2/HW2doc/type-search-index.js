@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"MyObservable"},{"p":"<Unnamed>","l":"MyObserver"},{"p":"<Unnamed>","l":"Pokemon"},{"p":"<Unnamed>","l":"PokemonTester"},{"p":"<Unnamed>","l":"PokemonTrainer"},{"p":"<Unnamed>","l":"WhatHappened"}]

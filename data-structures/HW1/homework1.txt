@@ -1,0 +1,31 @@
+Nick Hall
+HW1 - Algorithm Analysis
+
+public double calculateEnergy(double[][] coords, int numAtoms) {
+    double energySum = 0.0;
+    double r0 = 1.2;
+    for (int i=0 ; i i < numAtoms-1; i++){
+        for (int j=0; j < numAtoms; j++){
+            double distance = Math.sqrt((coords[i][0] - coords[j][o]) * (coords[i][0] - coords[j][o]) + 
+                                        (coords[i][1] - coords[j][1]) * (coords[i][1] - coords[j][1]) + 
+                                        (coords[i][2] - coords[j][2]) * (coords[i][2] - coords[j][2]));
+            double partialTerm1cubed = (r0/distance) * (r0/distance) * (r0/distance);
+            double term2 = partialTerm1cubed * partialTerm1cubed;
+            double term1 = term2 * tem2;
+            energySum = energySum + (term1 - 2.0 * term2);
+        }
+	}
+    return energySum;
+}
+
+Starting with the body of the inner for loop on lines 9-11, the square root function equals 6 plus 1 for
+assignment plus 11 operations which equals 18. Then on line 12 there are 5 mathematical operations that take place plus one for 
+assignment which equals 6. Line 13 has one operation plus assignment which equals 2. Line 14 equals 2 also.
+Line 15 has 3 operations plus the assignment which equals 4. After adding all of these up the body of the inner
+for loop has a run time of 32N. Next we calculate the for loop on line 8. The loop has 1 + N+1 + N which equals
+2N+2. The total for the inner for loop equals 38N + 2N+2 which equals 40N+2. Next we calculate the loop on
+line 7. This loop has 1 + N+1 + N which equals 2N+2. To calculate the total of the nested for loops we 
+multiply the running time of the statement by the products of the iterations of all loops. So to get this we
+do (40N+2)(2N+2) which equals 80N^2 + 84N + 4. Next we calculate lines 5,6, and 18 which equals 3 and add that
+to what we got for the nested for loops which equals 80N^2 + 84N + 7. This is our total runtime.
+The Big O signature of this algorithm would be O(N^2). 
